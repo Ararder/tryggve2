@@ -11,16 +11,16 @@
   </body>
 </html>
 
-<nav class="navbar navbar-expand-lg bg-success">
+<nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Tryggve</a>
+      <a class="navbar-brand" href="{% url 'tryggve-view' %}">Tryggve</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">About</a>
+            <a class="nav-link active" aria-current="page" href="{% url 'about-view' %}">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#"></a>
@@ -32,19 +32,19 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="{% url 'sweden-view' %}"> Sweden</a></li>
-              <li><a class="dropdown-item" href="#"> Denmark</a></li>
-              <li><a class="dropdown-item" href="#"> Norway</a></li>
+              <li><a class="dropdown-item" href="{% url 'denmark-view' %}"> Denmark</a></li>
+              <li><a class="dropdown-item" href="{% url 'norway-view' %}"> Norway</a></li>
               <li><a class="dropdown-item" href="#"> Estionia</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled">Infrastucture</a>
+            <a class="nav-link" href="{% url 'infrastructure-view' %}">Infrastucture</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled">Funding</a>
+            <a class="nav-link" href="{% url 'funding-view' %}">Funding</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled">Projects</a>
+            <a class="nav-link" href="{% url 'projects-view' %}">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'news-view' %}">News</a>
@@ -66,6 +66,55 @@
   </div>  
 </div>
 
+<row>
+  
+  
 
 
-<a href="{% url 'news-view' %}" class="link-info"> </a>
+<div class="container fixed-bottom">
+  <style>
+    .img-thumbnail {
+    border: 0;
+    width: 200px;
+    height: 200px;
+    }
+
+  </style>
+  <div class="row">
+    <div class="col-sm">
+      
+      <img src="https://ki.se/sites/default/files/styles/article_full_width/public/qbank/ki_logo-custom20201217114903.jpg?itok=G69mNLPL" class="rounded float-left img-thumbnail" alt="...">
+    </div>
+    <div class="col-sm">
+      
+      <img src="https://www.fhi.no/contentassets/c03aa76fe30941f08474ee823ba2a928/logo_lang.svg" class="rounded float-right img-thumbnail" alt="...">
+    </div>
+    <div class="col-sm">
+      <img src="https://biopsyk.dk/wp-content/uploads/2018/05/logo.jpg" class="rounded float-right img-thumbnail" alt="...">
+      
+    </div>
+
+    <div class="col-sm">
+      <img src="https://pbs.twimg.com/profile_images/1199674403916853248/79tgZIHK_400x400.png" class="rounded float-right img-thumbnail" alt="...">
+      
+    </div>
+  </div>
+</div>
+
+
+
+<!-- <div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-md-8 text-md-center">
+      <div
+      <div class="float-left">Float left on all viewport sizes</div><br>
+      <div class="float-right">Float right on all viewport sizes</div><br>
+      <div class="float-none">Don't float on all viewport sizes</div>
+      <img src="https://ki.se/sites/default/files/styles/article_full_width/public/qbank/ki_logo-custom20201217114903.jpg?itok=G69mNLPL" class="rounded float-left" alt="...">
+      <img src="https://ki.se/sites/default/files/styles/article_full_width/public/qbank/ki_logo-custom20201217114903.jpg?itok=G69mNLPL" class="rounded float-right" alt="...">
+  
+
+    </div>  
+  </div>  
+</div> -->
+
