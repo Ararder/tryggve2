@@ -1,5 +1,31 @@
 {% extends "tryggve/index.html" %}
-
+{% load static %}
 {% block content %}
-<h1> This is the landing page for information about tryggve </h1>
+<style>
+    .hero {
+      padding-bottom: 50%; /* = ( 600 / 1600 ) x 100 */
+      background-image: url("{% static 'tryggve/tryggve_map.png' %}");
+      background-size: cover;
+    }
+</style>
+<div class="row">
+    <div class="col-5 p-5">
+        <br><br><br><br><br><br>
+        <h4> 
+            Tryggve was started as away to collaborate on highly sensitive data, while adhering to the privacy laws of GDPR. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia nisl finibus, bibendum leo rhoncus, dapibus nisi. Nam imperdiet sodales diam porta pellentesque. 
+Morbi ornare suscipit enim, non pretium tortor tempor ac. Nam mattis purus vel sapien pharetra pharetra. Fusce dignissim ex eu erat blandit, id lobortis mi bibendum. 
+Fusce eget egestas dolor. Mauris fringilla placerat enim nec porta. Sed ex enim, venenatis bibendum facilisis ut, tempus ac ante. 
+Pellentesque facilisis odio sapien, sit amet sodales est euismod in. Nulla purus purus, egestas nec ornare ut, pulvinar vel ligula. 
+Morbi eu risus tempus, iaculis metus eget, semper diam. Mauris pellentesque, ex vel interdum finibus, diam ex aliquam neque, vitae cursus ex ligula non urna. Donec nec erat nisl. 
+Etiam tempor bibendum ipsum ac tristique. Sed dignissim quam turpis, a viverra tellus gravida non.
+</h4>
+    </div>
+    
+    <div class="col-7 hero justify-content-center">
+        <h4> </h4>
+    </div>
+
+</div>
+
 {% endblock content %}
