@@ -11,6 +11,7 @@ urlpatterns = [
     path('funding/', TemplateView.as_view(template_name="tryggve/funding.html"), name="funding-view"),
     path('projects/', TemplateView.as_view(template_name="tryggve/projects.html"), name="projects-view"),
     path('test/', TemplateView.as_view(template_name="tryggve/test.html"), name="test-view"),
+    path('resources/', TemplateView.as_view(template_name="tryggve/resources.html"), name="resources-view"),
     
     
     path('swe/', TemplateView.as_view(template_name="tryggve/sweden.html"), name="sweden-view"),
