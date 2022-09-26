@@ -1,0 +1,39 @@
+{% extends "tryggve/base.html" %}
+{% block content %}
+{% load static %}
+<div class="container">
+  
+  <div class="row">
+    <div class="col text-center mt-5"> 
+      <h1> Meet the team in {{ country_name }}</h1>
+    </div>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-5">  
+    {% for person in tp %}
+    <div class="col">
+      <div class="card h-100 border-white mt-5">
+        <img src="{{person.image}}" class="img-fluid" alt="..." style="width: 250px; height: 250x;">
+        <div class="card-body">
+          
+          <div class="card-title">
+            <b>{{ person.first_name}} {{ person.last_name}}</b>
+          </div>
+          
+          <div class="card-subtitle">
+            {{ person.description }}
+          </div>
+
+          <div class="card-text mt-2">
+              {{ person.affliation}}
+          </div>
+
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+</div>
+{% endblock content %}
+  

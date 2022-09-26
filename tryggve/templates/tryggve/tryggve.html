@@ -1,31 +1,23 @@
-{% extends "tryggve/index.html" %}
+{% extends "tryggve/base.html" %}
 {% load static %}
 {% block content %}
 
 <div class="container"> 
-
-    <div class="row justify-content-center">
-        <div class="col-5 p-5 text-md-center">
-            <br><br><br>
-            <!-- increase size of text, italics on subheader text -->
-            <h1> Tryggve </h1>
-            <!-- much larger text below -->
-            <h3><i><b> Trans-Nordic collaboration on 
-                sensitive register and genomic data </b></i></h3>
-                <br><br><br>
-                
-                <img src="{% static 'tryggve/sweden.svg' %}" class="cimg" alt="...">
-                <img src="{% static 'tryggve/denmark.svg' %}" class="cimg" alt="...">
-                <img src="{% static 'tryggve/norway.png' %}" class="cimg" alt="...">
-                <img src="{% static 'tryggve/iceland.svg' %}" class="cimg" alt="...">
-            </div>
-            
-            
-            <div class="col-7 hero mb-5", id="hero">
-                <h4> </h4>
-            </div>
-            
-        </div>
+    <div class="row">
         
-    </div>
+        <div class="col-5 mt-5 text-md-center"><br><br><br>
+    
+            <h1> Tryggve </h1>
+            <h3><i><b> Trans-Nordic collaboration on sensitive register and genomic data </b></i></h3><br><br><br>
+            <img src="{% static 'tryggve/sweden.svg' %}" class="cimg" alt="...">
+            <img src="{% static 'tryggve/denmark.svg' %}" class="cimg" alt="...">
+            <img src="{% static 'tryggve/norway.png' %}" class="cimg" alt="...">
+            <img src="{% static 'tryggve/iceland.svg' %}" class="cimg" alt="...">
+        </div>
+            
+            
+        <div class="col-7 hero mb-5", id="hero"></div>
+            
+    </div>        
+</div>
 {% endblock content %}
