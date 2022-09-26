@@ -14,6 +14,7 @@ urlpatterns = [
     path('funding/', TemplateView.as_view(template_name="tryggve/funding.html"), name="funding-view"),
     path('projects/', TemplateView.as_view(template_name="tryggve/projects.html"), name="projects-view"),
     path('news/', TemplateView.as_view(template_name="tryggve/news.html"), name="news-view"),
+    path('jobs/', TemplateView.as_view(template_name="tryggve/jobs.html"), name="jobs-view"),
     
     # for testing stufff
     path('test/', views.TestView.as_view(), name="test-view"),

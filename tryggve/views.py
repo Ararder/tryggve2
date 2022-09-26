@@ -26,6 +26,13 @@ class CountryView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         country =  Country.objects.get(id=self.kwargs['pk'])
+        # find the teamlead in the country
+        try:
+            context['teamlead'] = Person.objects.get(in_country=country, team_lead=True)
+        except:
+            context['teamlead'] = ''
         context['country_name'] = country.name
-        context['tp'] = Person.objects.filter(in_country=country)
+        context['tp'] = Person.objects.filter(in_country=country, team_lead=False)
         return context
+
+
